@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDual - Actividades diarias</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+</head>
+
+<body>
+    <header id="content">
+        <div>
+            <img src="https://picsum.photos/250/75" alt="Logotipo EDual">
+            <h1>Nombre del profesor</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Mis alumnos</a></li>
+                <li><a href="#">Actividades diarias</a></li>
+                <li><a href="#">Gestionar alumnos</a></li>
+                <li><a href="#">Empresas</a></li>
+            </ul>
+        </nav>
+
+        <img src="https://picsum.photos/50/50" alt="Mi perfil">
+    </header>
+
+    <main id="content">
+        <h1>Actividades diarias</h1>
+        <form action="post">
+            <select name="student" id="studentSelector">
+                <option value="default">Elige un alumno</option>
+                <option value="0011223344Z">Maribel Castro</option>
+                <option value="1122334455Y">Cristian Tirado</option>
+                <option value="2233445566X">Carlos Manuel Trigo</option>
+                <option value="3344556677W">Sonia Robledo</option>
+                <option value="4455667788V">Yolanda Simón</option>
+            </select>
+        </form>
+
+        <div id="hoursCounter">
+            <h2>-/- horas Dual</h2>
+            <h2>-/- horas FCT</h2>
+        </div>
+
+        <table id="dailies">
+            <colgroup>
+                <col id="date">
+                <col id="type"/>
+                <col id="hours"/>
+                <col id="activities"/>
+                <col id="observations"/>
+            </colgroup>
+            <tr>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Horas</th>
+                <th>Actividad realizada</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>15/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Curso de introducción</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16/11/2023</td>
+                <td>Dual</td>
+                <td>7</td>
+                <td>Desarrollo en Python</td>
+                <td>Entrada 1 hora más tarde por motivos médicos.</td>
+            </tr>
+            <tr>
+                <td>17/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Desarrollo en Python</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18/11/2023</td>
+                <td>Dual</td>
+                <td>9</td>
+                <td>Desarrollo en Python</td>
+                <td>Recuperación de hora perdida.</td>
+            </tr>
+            <tr>
+                <td>19/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Revisión de código</td>
+                <td>Se han detectado puntos de mejora.</td>
+            </tr>
+        </table>
+    </main>
+
+
+    <footer>
+        PLACEHOLDER
+    </footer>
+</body>
+
+</html>
