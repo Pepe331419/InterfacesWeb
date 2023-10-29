@@ -1,0 +1,67 @@
+@use "vars";
+
+
+header#main {
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: vars.$dimensiones_logo;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: vars.$dimensiones_logo;
+        width: vars.$dimensiones_logo; //ELIMINAR O SEPARAR VARIABLES UNA VEZ PUESTO EL LOGO
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin: 2rem;
+
+                &:hover {
+                    text-shadow: 2px 2px 3px lightblue;
+                    background-color: darkgray;
+                }
+            }
+        }
+
+        ul.submenu{
+            transition: 1s;
+            opacity: 0;
+            visibility: hidden;
+            flex-direction:column;
+            position:absolute;
+            top: calc((vars.$dimensiones_logo - 3.5rem )/2); //PASAR A VARIABLES
+            left: 0;
+            z-index:8;
+        }
+
+        ul li:hover ul.submenu{
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

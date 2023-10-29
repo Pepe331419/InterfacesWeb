@@ -1,108 +1,19 @@
-* {
-    --outline: solid #FF0000 1px;
-}
-
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header#main {
-    display: flex;
-    justify-content: center;
-
-    img {
-        height: 10rem;
-    }
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-        height: 10rem;
-        width: 10rem;
-    }
-
-    div {
-        display: flex;
-        align-items: center;
-
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-
-        ul {
-            display: flex;
-            list-style-type: none;
-            align-items: center;
-            padding: 0;
-
-            li {
-                position: relative;
-                margin: 2rem;
-
-                &:hover {
-                    text-shadow: 2px 2px 3px lightblue;
-                    background-color: darkgray;
-                }
-            }
-        }
-    }
-}
-
-div#login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35rem;
-
-    form {
-        display: flex;
-        justify-content: center;
-
-        fieldset {
-            display: flex;
-            flex-direction: column;
-            width: 25rem;
-            border: 1.5px;
-            border-style: groove;
-            border-color: #000000;
-            border-radius: 2.5rem;
-
-            label {
-                margin: 2rem 3rem 0.5rem 3rem;
-                padding-left: 1rem;
-            }
-
-            input {
-                margin: 0rem 3rem 0 3rem;
-                border-radius: 2.5rem;
-                padding: 0.5rem 1rem;
-
-                &#submit {
-                    margin: 2rem 7rem 1rem 7rem;
-                    border-radius: 2.5rem;
-                    height: 3rem;
-                }
-            }
-        }
-    }
-}
+@use "page";
+@use "vars";
+@use "header";
+@use "footer";
+@use "login";
 
 main#content {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    form select#studentSelector{
-        width:30rem;
+    form select#studentSelector {
+        width: 30rem;
     }
 
-    div#hoursCounter{
+    div#hoursCounter {
         display: flex;
         width: 30rem;
         justify-content: space-between;
@@ -112,7 +23,8 @@ main#content {
         background-color: #FFFFFF;
         border-collapse: collapse;
 
-        tr td,th {
+        tr td,
+        th {
             border: solid 1px #000000;
         }
 
@@ -139,21 +51,80 @@ main#content {
 
         }
 
-        &#dailies{
-            tr td,th{
+        &#dailies {
+
+            tr td,
+            th {
                 padding: 0.5rem 1rem;
+            }
+
+            tr td a img {
+                height: 16px;
             }
         }
     }
 
+    form.addOrModify {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 20rem;
+            margin-left: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    form#chooseModified {
+        margin-bottom: 2rem;
+    }
+
+    form.newActivity {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            label,
+            input,
+            textarea {
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+            }
+
+            input.submit {
+                margin-top: 1rem;
+                height: 3vh;
+                width: 6rem;
+            }
+        }
 
 
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-    text-align: center;
+    }
 }
