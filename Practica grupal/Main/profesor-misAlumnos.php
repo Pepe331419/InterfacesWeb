@@ -69,7 +69,7 @@
         </tr>
     </table>
 
-    <a href="#">
+    <a href="profesor-actividadesDiarias.php">
         <h2>Ver actividades diarias</h2>
     </a>
 

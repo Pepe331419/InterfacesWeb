@@ -1,3 +1,10 @@
+
+header#main{
+
+img{
+    height: 100px;
+}
+}
 div#login {
     display: flex;
     align-items: center;
@@ -15,7 +22,7 @@ div#login {
             border: 1.5px;
             border-style: inset;
             border-color: #000000;
-            border-radius: 2.5rem;
+            border-radius: 1rem;
 
             label {
                 margin: 2rem 3rem 0.5rem 3rem;

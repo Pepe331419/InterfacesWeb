@@ -1,7 +1,41 @@
+@use "vars";
 footer {
+    background-color: vars.$color_verde_oscuro;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-    text-align: center;
+    align-items:end;
+    justify-content: space-between;
+    color: vars.$color_blanco;
+    
+  
+
+    ul{
+        list-style:none;
+        li{
+            a{
+                text-decoration: none;
+                color: vars.$color_verde_claro;
+                &:hover{
+                    color: vars.$color_blanco;
+                    text-decoration-line: underline;
+                    
+                }
+            }
+        }
+   }
+small{
+    margin: 3px;
+}
+p{
+padding: 30px 10x;
+
+a{
+    text-decoration: none;
+    color: white;
+}
+}
+img.logo{
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+}
 }

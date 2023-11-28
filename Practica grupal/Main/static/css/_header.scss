@@ -5,21 +5,38 @@ header#main {
     display: flex;
     justify-content: center;
 
-    img {
-        height: vars.$dimensiones_logo;
-    }
+   
+    
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-        height: vars.$dimensiones_logo;
-        width: vars.$dimensiones_logo; //ELIMINAR O SEPARAR VARIABLES UNA VEZ PUESTO EL LOGO
+    h1{
+        color: vars.$color_blanco;
     }
 
+    section.nav {
+        background-color: vars.$color_verde_oscuro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+
+    img.imgPerfil{
+        height: 80px;
+        width: 80px;
+        border: black solid 2px;
+        border-radius: 50%;
+        margin: 12px;
+    }
+
+    img.logo{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+       
+        margin: 20px;
+    }
     div {
         display: flex;
         align-items: center;
@@ -29,7 +46,7 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-
+      
         ul {
             display: flex;
             list-style-type: none;
@@ -39,10 +56,11 @@ header {
             li {
                 position: relative;
                 margin: 2rem;
-
+                a{
                 &:hover {
-                    text-shadow: 2px 2px 3px lightblue;
-                    background-color: darkgray;
+                   color: vars.$color_verde_claro;
+                    
+                }
                 }
             }
         }
@@ -62,6 +80,16 @@ header {
             display: flex;
             visibility: visible;
             opacity: 1;
+
+           
+        }
+    }
+    nav ul li{
+        a{
+            
+                text-decoration: none;
+            color: vars.$color_blanco;
+            
         }
     }
 }

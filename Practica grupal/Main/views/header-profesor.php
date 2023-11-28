@@ -1,24 +1,27 @@
 <body>
     <header>
+        <section class="nav">
         <div>
-            <img src="https://picsum.photos/250/75" alt="Logotipo EDual">
+            <img class="imgPerfil" src="static/img/Antonio.jpg" alt="Foto Perfil">
             <h1>Antonio Bernabé Arellano</h1>
         </div>
 
         <nav>
             <ul>
-                <li><a href="#">Mis alumnos</a></li>
-                <li><a href="#">Actividades diarias</a></li>
+                <li><a href="profesor-misAlumnos.php">Mis alumnos</a></li>
+                <li><a href="profesor-actividadesDiarias.php">Actividades diarias</a></li>
                 <li>
-                    <a href="#">Gestionar alumnos</a>
+                    <a href="profesor-modificarAlumno.php">Gestionar alumnos</a>
                     <ul class="submenu">
-                        <li><a href="#">Añadir</a></li>
-                        <li><a href="#">Modificar</a></li>
+                        <li><a href="profesor-nuevoAlumno.php">Añadir</a></li>
+                        <li><a href="profesor-modificarAlumno.php">Modificar</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Empresas</a></li>
+                <li><a href="profesor-modificarEmpresa.php">Empresas</a></li>
+                <li><a href="login.php">Cerrar Sesion</a></li>
             </ul>
         </nav>
 
-        <img src="https://picsum.photos/50/50" alt="Mi perfil">
+        <img class="logo"src="static/img/Logo App EDual.png" alt="Logo EDUAL">
+        </section>
     </header>
