@@ -8,8 +8,8 @@ main#content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 20px;
-    background-color: rgba(186, 247, 186, 0.486);
+    padding: 3rem 0 4rem 0;
+    background-color: rgb(245, 255, 245);
 
     form select#studentSelector {
         width: 30rem;
@@ -25,6 +25,10 @@ main#content {
         background-color: #FFFFFF;
         border-collapse: collapse;
 
+        thead {
+            background-color: #d4d4d4;
+        }
+
         tr td,
         th {
             border: solid 1px #000000;
@@ -32,6 +36,10 @@ main#content {
 
         tr:nth-child(2n) {
             background-color: #E9E9E9;
+        }
+
+        tbody tr:hover {
+            background-color: #3682164f;
         }
 
         &#students {
@@ -43,12 +51,16 @@ main#content {
         &#info {
             tr td:nth-child(2n+1) {
                 text-align: right;
-                background-color: rgba(186, 247, 186, 0.486);
+                background-color: rgb(245, 255, 245);
                 border: 0;
             }
 
             tr td:nth-child(2n) {
                 width: 40rem;
+            }
+
+            tbody tr:hover {
+                background-color: #3682164f;
             }
 
         }
@@ -66,31 +78,62 @@ main#content {
         }
     }
 
-    form.addOrModify {
+    form#addOrModify {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 1rem;
+        height: auto;
 
         div {
-            display: flex;
-            align-items: center;
-        }
+            &.labels {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                
+                label{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    height: 30px;
+                }
+            }
 
-        input,
-        textarea,
-        select {
-            width: 20rem;
-            margin-left: 1rem;
-        }
+            &.inputs {
+                display: flex;
+                flex-direction: column;
 
-        textarea {
-            resize: vertical;
+                input{
+                    height: 24px;
+                    padding: 1px;
+                    width: 20rem;
+                    margin-left: 1rem;
+                }
+
+                select{
+                    margin-left: 1rem;
+                    width: 20.4rem;
+                    height:30px;
+                }
+
+                textarea {
+                    width: 20rem;
+                    margin-left: 1rem;
+                    resize: vertical;
+                }
+            }
         }
+    }
+
+    input#submitAddOrModify{
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        width: 10rem;
     }
 
     form#chooseModified {
         margin-bottom: 2rem;
+
+        select{
+            width: 31rem;
+        }
     }
 
     form.newActivity {
@@ -130,12 +173,12 @@ main#content {
 
     }
 
-    a:has(h2){
+    a:has(h2) {
         text-decoration: none;
-        color: gray;
+        color: #000000;
 
-        &:hover{
-            color: rgba(128, 128, 128, 0.493);
+        h2:hover {
+            color: vars.$color_verde_claro;
         }
     }
 }

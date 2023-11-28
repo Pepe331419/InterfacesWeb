@@ -12,50 +12,62 @@ header#main {
   justify-content: center;
 }
 
-header h1 {
+header#headerMenu {
+  padding: 0 1rem;
+  background-color: #368216;
+}
+header#headerMenu section:has(a) a {
+  text-decoration: none;
   color: #FFFFFF;
 }
-header section.nav {
-  background-color: #368216;
+header#headerMenu section:has(a) a:hover {
+  color: #7ED957;
+}
+header#headerMenu h1 {
+  color: #FFFFFF;
+}
+header#headerMenu section.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header img.imgPerfil {
+header#headerMenu img.imgPerfil {
   height: 80px;
   width: 80px;
   border: black solid 2px;
   border-radius: 50%;
-  margin: 12px;
 }
-header img.logo {
+header#headerMenu h1 {
+  margin: 0 1rem;
+}
+header#headerMenu img.logo {
   height: 90px;
   width: 90px;
   border-radius: 50%;
   margin: 20px;
 }
-header div {
+header#headerMenu div {
   display: flex;
   align-items: center;
 }
-header nav {
+header#headerMenu nav {
   display: flex;
   justify-content: space-between;
 }
-header nav ul {
+header#headerMenu nav ul {
   display: flex;
   list-style-type: none;
   align-items: center;
   padding: 0;
 }
-header nav ul li {
+header#headerMenu nav ul li {
   position: relative;
   margin: 2rem;
 }
-header nav ul li a:hover {
+header#headerMenu nav ul li a:hover {
   color: #7ED957;
 }
-header nav ul.submenu {
+header#headerMenu nav ul.submenu {
   transition: 1s;
   opacity: 0;
   visibility: hidden;
@@ -65,12 +77,12 @@ header nav ul.submenu {
   left: 0;
   z-index: 8;
 }
-header nav ul li:hover ul.submenu {
+header#headerMenu nav ul li:hover ul.submenu {
   display: flex;
   visibility: visible;
   opacity: 1;
 }
-header nav ul li a {
+header#headerMenu nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -78,12 +90,20 @@ header nav ul li a {
 footer {
   background-color: #368216;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
+  padding: 1rem;
+}
+footer div {
+  flex: 1;
 }
 footer ul {
+  flex: 1;
   list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 footer ul li a {
   text-decoration: none;
@@ -93,7 +113,13 @@ footer ul li a:hover {
   color: #FFFFFF;
   text-decoration-line: underline;
 }
-footer small {
+footer div:has(small) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100px;
+}
+footer div:has(small) small {
   margin: 3px;
 }
 footer p {
@@ -107,14 +133,16 @@ footer img.logo {
   width: 100px;
   height: 100px;
   padding: 18px;
+  border-radius: 2rem;
 }
 
 header#main img {
-  height: 100px;
+  height: 10rem;
 }
 
 div#login {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 35rem;
@@ -151,8 +179,8 @@ main#content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0 20px;
-  background-color: rgba(186, 247, 186, 0.486);
+  padding: 3rem 0 4rem 0;
+  background-color: rgb(245, 255, 245);
 }
 main#content form select#studentSelector {
   width: 30rem;
@@ -166,6 +194,9 @@ main#content table {
   background-color: #FFFFFF;
   border-collapse: collapse;
 }
+main#content table thead {
+  background-color: #d4d4d4;
+}
 main#content table tr td,
 main#content table th {
   border: solid 1px #000000;
@@ -173,16 +204,22 @@ main#content table th {
 main#content table tr:nth-child(2n) {
   background-color: #E9E9E9;
 }
+main#content table tbody tr:hover {
+  background-color: rgba(54, 130, 22, 0.3098039216);
+}
 main#content table#students tr td {
   width: 30rem;
 }
 main#content table#info tr td:nth-child(2n+1) {
   text-align: right;
-  background-color: rgba(186, 247, 186, 0.486);
+  background-color: rgb(245, 255, 245);
   border: 0;
 }
 main#content table#info tr td:nth-child(2n) {
   width: 40rem;
+}
+main#content table#info tbody tr:hover {
+  background-color: rgba(54, 130, 22, 0.3098039216);
 }
 main#content table#dailies tr td,
 main#content table#dailies th {
@@ -191,27 +228,51 @@ main#content table#dailies th {
 main#content table#dailies tr td a img {
   height: 16px;
 }
-main#content form.addOrModify {
+main#content form#addOrModify {
+  display: flex;
+  height: auto;
+}
+main#content form#addOrModify div.labels {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 1rem;
+  text-align: right;
 }
-main#content form.addOrModify div {
+main#content form#addOrModify div.labels label {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  height: 30px;
 }
-main#content form.addOrModify input,
-main#content form.addOrModify textarea,
-main#content form.addOrModify select {
+main#content form#addOrModify div.inputs {
+  display: flex;
+  flex-direction: column;
+}
+main#content form#addOrModify div.inputs input {
+  height: 24px;
+  padding: 1px;
   width: 20rem;
   margin-left: 1rem;
 }
-main#content form.addOrModify textarea {
+main#content form#addOrModify div.inputs select {
+  margin-left: 1rem;
+  width: 20.4rem;
+  height: 30px;
+}
+main#content form#addOrModify div.inputs textarea {
+  width: 20rem;
+  margin-left: 1rem;
   resize: vertical;
+}
+main#content input#submitAddOrModify {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  width: 10rem;
 }
 main#content form#chooseModified {
   margin-bottom: 2rem;
+}
+main#content form#chooseModified select {
+  width: 31rem;
 }
 main#content form.newActivity {
   display: flex;
@@ -244,8 +305,8 @@ main#content form.newActivity div input.submit {
 }
 main#content a:has(h2) {
   text-decoration: none;
-  color: gray;
+  color: #000000;
 }
-main#content a:has(h2):hover {
-  color: rgba(128, 128, 128, 0.493);
+main#content a:has(h2) h2:hover {
+  color: #7ED957;
 }/*# sourceMappingURL=style.css.map */
