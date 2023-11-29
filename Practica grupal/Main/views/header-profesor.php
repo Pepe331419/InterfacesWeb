@@ -9,10 +9,11 @@
             <nav>
                 <ul>
                     <li><a href="profesor-misAlumnos.php">Mis alumnos</a></li>
+              
                     <li><a href="profesor-actividadesDiarias.php">Actividades diarias</a></li>
                     <li>
                         <a href="profesor-modificarAlumno.php">Gestionar alumnos</a>
-                        <ul class="submenu">
+                        <ul id="submenu">
                             <li><a href="profesor-nuevoAlumno.php">Añadir</a></li>
                             <li><a href="profesor-modificarAlumno.php">Modificar</a></li>
                         </ul>
