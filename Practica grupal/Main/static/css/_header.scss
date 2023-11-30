@@ -13,27 +13,51 @@ header#headerMenu {
     section nav{
         
 
-        #submenu{
+        .submenu{
         left: 0;
         opacity: 0;
             position: absolute;
-            top: 35px;
+            top: 15px;
             visibility: hidden;
             z-index: 1;
-            transition: 0.2s ease;
         }
 
-        li:hover ul#submenu{
+        li:hover ul.submenu{
                    visibility: visible;
                    opacity: 1;
-          left: 0;
+                   top: 15px;
+                   left: 0px;
+                   right: 0px;
            background-color: vars.$color_verde_oscuro;
          
           display: flex;
           flex-direction: column;
          border-radius: 5%;
+         
 
         }
+        .submenu2{
+            left: 0;
+            opacity: 0;
+                position: absolute;
+                top: 15px;
+                visibility: hidden;
+                z-index: 1;
+              background-color: vars.$color_verde_oscuro;
+              
+            }
+
+            li:hover ul.submenu2{
+                visibility: visible;
+                opacity: 1;
+                  top: 15px;
+                    left: 0px;
+                    right: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 5%;
+                
+     }
     }
     section:has(a) a{
         text-decoration: none;
@@ -99,22 +123,7 @@ header#headerMenu {
             }
         }
 
-        ul.submenu{
-            transition: 1s;
-            opacity: 0;
-            visibility: hidden;
-            flex-direction:column;
-            position:absolute;
-            top: calc((vars.$dimensiones_logo - 3.5rem )/2);
-            left: 0;
-            z-index:8;
-        }
-
-        ul li:hover ul.submenu{
-            display: flex;
-            visibility: visible;
-            opacity: 1;
-        }
+    
     }
     nav ul li{
         a{

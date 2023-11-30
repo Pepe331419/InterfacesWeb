@@ -16,20 +16,40 @@ header#headerMenu {
   padding: 0 1rem;
   background-color: #368216;
 }
-header#headerMenu section nav #submenu {
+header#headerMenu section nav .submenu {
   left: 0;
   opacity: 0;
   position: absolute;
-  top: 35px;
+  top: 15px;
   visibility: hidden;
   z-index: 1;
-  transition: 0.2s ease;
 }
-header#headerMenu section nav li:hover ul#submenu {
+header#headerMenu section nav li:hover ul.submenu {
   visibility: visible;
   opacity: 1;
-  left: 0;
+  top: 15px;
+  left: 0px;
+  right: 0px;
   background-color: #368216;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+}
+header#headerMenu section nav .submenu2 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  visibility: hidden;
+  z-index: 1;
+  background-color: #368216;
+}
+header#headerMenu section nav li:hover ul.submenu2 {
+  visibility: visible;
+  opacity: 1;
+  top: 15px;
+  left: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   border-radius: 5%;
@@ -85,21 +105,6 @@ header#headerMenu nav ul li {
 header#headerMenu nav ul li a:hover {
   color: #7ED957;
 }
-header#headerMenu nav ul.submenu {
-  transition: 1s;
-  opacity: 0;
-  visibility: hidden;
-  flex-direction: column;
-  position: absolute;
-  top: 3.25rem;
-  left: 0;
-  z-index: 8;
-}
-header#headerMenu nav ul li:hover ul.submenu {
-  display: flex;
-  visibility: visible;
-  opacity: 1;
-}
 header#headerMenu nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
@@ -112,6 +117,7 @@ footer {
   justify-content: space-between;
   color: #FFFFFF;
   padding: 1rem;
+  bottom: 0;
 }
 footer div {
   flex: 1;
@@ -217,7 +223,8 @@ main#content table thead {
 }
 main#content table tr td,
 main#content table th {
-  border: solid 1px #000000;
+  border: solid 2px #000000;
+  padding: 5px;
 }
 main#content table tr:nth-child(2n) {
   background-color: #E9E9E9;
@@ -238,6 +245,9 @@ main#content table#info tr td:nth-child(2n) {
 }
 main#content table#info tbody tr:hover {
   background-color: rgba(54, 130, 22, 0.3098039216);
+}
+main#content table#info td {
+  padding: 5px;
 }
 main#content table#dailies tr td,
 main#content table#dailies th {
@@ -285,6 +295,13 @@ main#content input#submitAddOrModify {
   margin: 1rem;
   padding: 0.5rem 1rem;
   width: 10rem;
+  background-color: #7ED957;
+  color: #FFFFFF;
+}
+main#content input#submitAddOrModify:hover {
+  background-color: #368216;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 main#content form#chooseModified {
   margin-bottom: 2rem;
@@ -320,6 +337,12 @@ main#content form.newActivity div input.submit {
   margin-top: 1rem;
   height: 3vh;
   width: 6rem;
+  background-color: #7ED957;
+}
+main#content form.newActivity div input.submit:hover {
+  color: #FFFFFF;
+  background-color: #368216;
+  cursor: pointer;
 }
 main#content a:has(h2) {
   text-decoration: none;

@@ -13,12 +13,17 @@
                     <li><a href="profesor-actividadesDiarias.php">Actividades diarias</a></li>
                     <li>
                         <a href="profesor-modificarAlumno.php">Gestionar alumnos</a>
-                        <ul id="submenu">
+                        <ul class="submenu">
                             <li><a href="profesor-nuevoAlumno.php">Añadir</a></li>
                             <li><a href="profesor-modificarAlumno.php">Modificar</a></li>
                         </ul>
                     </li>
-                    <li><a href="profesor-modificarEmpresa.php">Empresas</a></li>
+                    <li><a href="profesor-modificarEmpresa.php">Gestionar empresas</a>
+                    <ul class="submenu2">
+                            <li><a href="profesor-nuevaEmpresa.php">Añadir</a></li>
+                            <li><a href="profesor-modificarEmpresa.php">Modificar</a></li>
+                        </ul>
+                        </li>
                 </ul>
             </nav>
 
