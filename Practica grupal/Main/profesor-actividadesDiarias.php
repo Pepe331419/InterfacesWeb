@@ -15,8 +15,8 @@
     </form>
 
     <div id="hoursCounter">
-        <h2>-/- horas Dual</h2>
-        <h2>-/- horas FCT</h2>
+        <h2>30/160 horas Dual</h2>
+        <h2>0/240 horas FCT</h2>
     </div>
 
     <table id="dailies">

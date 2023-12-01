@@ -12,7 +12,7 @@
             <label for="modifyDni">DNI:</label>
             <label for="modifyBirthdate">Fecha de nacimiento:</label>
             <label for="modifyEmail">Email:</label>
-            <label for="modifyPhone">Teléfono</label>
+            <label for="modifyPhone">Teléfono:</label>
             <label for="modifyCompany">Empresa:</label>
             <label for="tutor">Tutor:</label>
             <label for="modifyHoursDual">Nº horas Dual:</label>

@@ -52,6 +52,7 @@
         </div>
     </form>
     <input type="submit" value="Modificar" form="addOrModify" id="submitAddOrModify">
+    <button>Eliminar alumno</button>
 </main>
 
 <?php require("views/footer.php"); ?>

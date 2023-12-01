@@ -5,19 +5,19 @@
     <h1>Mis alumnos</h1>
     <table id="students">
         <tr>
-            <td>Maribel Castro</td>
+            <td><a href="#">Maribel Castro</a></td>
         </tr>
         <tr>
-            <td>Cristian Tirado</td>
+            <td><a href="#">Cristian Tirado</a></td>
         </tr>
         <tr>
-            <td>Carlos Manuel Trigo</td>
+            <td><a href="#">Carlos Manuel Trigo</a></td>
         </tr>
         <tr>
-            <td>Sonia Robledo</td>
+            <td><a href="#">Sonia Robledo</a></td>
         </tr>
         <tr>
-            <td>Yolanda Simón</td>
+            <td><a href="#">Yolanda Simón</a></td>
         </tr>
     </table>
 

@@ -7,7 +7,6 @@
     </header>
 
     <main>
-
         <div id="login">
             <h1>Inicia sesión con tu cuenta</h1>
             <form action="procesar_login.php" method="post">

@@ -44,90 +44,84 @@
 
     <h2>Mi historial de actividades</h2>
     <table id="dailies">
-        <colgroup>
-            <!-- Para fijarles el ancho -->
-            <col class="date">
-            <col class="type" />
-            <col class="hours" />
-            <col class="activities" />
-            <col class="observations" />
-            <col id="modifyActivity"> <!-- Las dos últimas deberán ir sin estilo, para que solo se vea el icono -->
-            <col class="deleteActivity">
-        </colgroup>
-        <tr>
-            <th>Fecha</th>
-            <th>Tipo</th>
-            <th>Horas</th>
-            <th>Actividad realizada</th>
-            <th>Observaciones</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>15/11/2023</td>
-            <td>Dual</td>
-            <td>8</td>
-            <td>Curso de introducción</td>
-            <td></td>
-            <td>
-                <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
-            </td>
-            <td>
-                <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>16/11/2023</td>
-            <td>Dual</td>
-            <td>7</td>
-            <td>Desarrollo en Python</td>
-            <td>Entrada 1 hora más tarde por motivos médicos.</td>
-            <td>
-                <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
-            </td>
-            <td>
-                <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>17/11/2023</td>
-            <td>Dual</td>
-            <td>8</td>
-            <td>Desarrollo en Python</td>
-            <td></td>
-            <td>
-                <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
-            </td>
-            <td>
-                <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>18/11/2023</td>
-            <td>Dual</td>
-            <td>9</td>
-            <td>Desarrollo en Python</td>
-            <td>Recuperación de hora perdida.</td>
-            <td>
-                <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
-            </td>
-            <td>
-                <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>19/11/2023</td>
-            <td>Dual</td>
-            <td>8</td>
-            <td>Revisión de código</td>
-            <td>Se han detectado puntos de mejora.</td>
-            <td>
-                <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
-            </td>
-            <td>
-                <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Horas</th>
+                <th>Actividad realizada</th>
+                <th>Observaciones</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Curso de introducción</td>
+                <td></td>
+                <td>
+                    <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
+                </td>
+                <td>
+                    <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>16/11/2023</td>
+                <td>Dual</td>
+                <td>7</td>
+                <td>Desarrollo en Python</td>
+                <td>Entrada 1 hora más tarde por motivos médicos.</td>
+                <td>
+                    <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
+                </td>
+                <td>
+                    <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>17/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Desarrollo en Python</td>
+                <td></td>
+                <td>
+                    <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
+                </td>
+                <td>
+                    <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>18/11/2023</td>
+                <td>Dual</td>
+                <td>9</td>
+                <td>Desarrollo en Python</td>
+                <td>Recuperación de hora perdida.</td>
+                <td>
+                    <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
+                </td>
+                <td>
+                    <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>19/11/2023</td>
+                <td>Dual</td>
+                <td>8</td>
+                <td>Revisión de código</td>
+                <td>Se han detectado puntos de mejora.</td>
+                <td>
+                    <a class="editEntry" href="#"><img src="static/img/edit.png" alt="Editar entrada"></a>
+                </td>
+                <td>
+                    <a class="deleteEntry" href="#"><img src="static/img/delete.png" alt="Editar entrada"></a>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
 </main>
