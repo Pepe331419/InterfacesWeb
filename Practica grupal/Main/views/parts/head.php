@@ -7,4 +7,5 @@
     <title>EDual - Plataforma de prácticas</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/normalize.css">
+
 </head>
