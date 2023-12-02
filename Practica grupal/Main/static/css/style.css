@@ -359,11 +359,62 @@ main#content form.newActivity div input.submit:hover {
 }
 main#content #editModal {
   display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 main#content form.editActivity {
+  max-width: 400px;
+  margin: 7% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF;
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+main#content form.editActivity label {
+  background-color: #368216;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+main#content form.editActivity h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+main#content form.editActivity button {
+  background-color: #7ED957;
+  color: #FFFFFF;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+main#content form.editActivity button:hover {
+  background-color: #368216;
+}
+main#content form.editActivity input,
+main#content form.editActivity textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 main#content a:has(h2) {
   text-decoration: none;

@@ -22,7 +22,7 @@ main#content {
     }
 
     table {
-        background-color: #FFFFFF;
+        background-color: vars.$color_blanco;
         border-collapse: collapse;
 
         thead {
@@ -193,7 +193,7 @@ main#content {
 
 
             input.submit:hover {
-                color: #FFFFFF;
+                color: vars.$color_blanco;
                 background-color: vars.$color_verde_oscuro;
                 cursor: pointer;
             }
@@ -203,17 +203,75 @@ main#content {
 
     }
 
-    #editModal { // PARA OCULTAR EL MODAL SINO DE BASE APARECE
+    #editModal {
         display: none;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 
-
-    form.editActivity {  // EDITAR ESTILOS 
+    form.editActivity {
+        max-width: 400px;
+        margin: 7% auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: vars.$color_blanco;
         display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            background-color: vars.$color_verde_oscuro;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: vars.$color_negro;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background-color: vars.$color_verde_claro;
+            color: vars.$color_blanco;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+
+            &:hover {
+                background-color: vars.$color_verde_oscuro;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
     }
+
+
+
 
     a:has(h2) {
         text-decoration: none;
@@ -224,4 +282,3 @@ main#content {
         }
     }
 }
-

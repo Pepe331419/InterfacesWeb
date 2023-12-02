@@ -118,8 +118,8 @@
     </table>
 
     <div id="editModal">  
-            <h2>Editar Actividad</h2>
             <form class="editActivity">
+            <h2>Editar Actividad</h2>
                 <label>Fecha</label>
                 <input type="date">
                 <label>Tipo</label>
