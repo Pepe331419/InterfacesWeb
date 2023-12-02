@@ -218,7 +218,6 @@ main#content {
   align-items: center;
   padding: 3rem 0 4rem 0;
   background-color: rgb(245, 255, 245);
-  min-height: 55vh;
 }
 main#content form select#studentSelector {
   width: 30rem;
@@ -237,7 +236,8 @@ main#content table thead {
 }
 main#content table tr td,
 main#content table th {
-  border: solid 1px #000000;
+  border: solid 2px #000000;
+  padding: 5px;
 }
 main#content table tr:nth-child(2n) {
   background-color: #E9E9E9;
@@ -247,10 +247,6 @@ main#content table tbody tr:hover {
 }
 main#content table#students tr td {
   width: 30rem;
-}
-main#content table#students a {
-  text-decoration: none;
-  color: black;
 }
 main#content table#info tr td:nth-child(2n+1) {
   text-align: right;
@@ -262,6 +258,9 @@ main#content table#info tr td:nth-child(2n) {
 }
 main#content table#info tbody tr:hover {
   background-color: rgba(54, 130, 22, 0.3098039216);
+}
+main#content table#info td {
+  padding: 5px;
 }
 main#content table#dailies tr td,
 main#content table#dailies th {
@@ -294,42 +293,28 @@ main#content form#addOrModify div.inputs input {
   padding: 1px;
   width: 20rem;
   margin-left: 1rem;
-  border-radius: 0.5rem;
 }
 main#content form#addOrModify div.inputs select {
   margin-left: 1rem;
   width: 20.4rem;
   height: 30px;
-  border-radius: 0.5rem;
-  border-color: black;
 }
 main#content form#addOrModify div.inputs textarea {
   width: 20rem;
   margin-left: 1rem;
   resize: vertical;
-  border-radius: 0.5rem;
-}
-main#content button {
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  width: 10rem;
-  border-radius: 1rem;
-  background-color: rgb(255, 63, 63);
-}
-main#content button:hover {
-  background-color: rgb(255, 0, 0);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 main#content input#submitAddOrModify {
   margin: 1rem;
   padding: 0.5rem 1rem;
   width: 10rem;
-  border-radius: 1rem;
-  background-color: rgb(203, 255, 179);
+  background-color: #7ED957;
+  color: #FFFFFF;
 }
 main#content input#submitAddOrModify:hover {
-  background-color: rgb(101, 179, 68);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #368216;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 main#content form#chooseModified {
   margin-bottom: 2rem;
@@ -365,6 +350,20 @@ main#content form.newActivity div input.submit {
   margin-top: 1rem;
   height: 3vh;
   width: 6rem;
+  background-color: #7ED957;
+}
+main#content form.newActivity div input.submit:hover {
+  color: #FFFFFF;
+  background-color: #368216;
+  cursor: pointer;
+}
+main#content #editModal {
+  display: none;
+}
+main#content form.editActivity {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 main#content a:has(h2) {
   text-decoration: none;

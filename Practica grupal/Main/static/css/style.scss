@@ -10,7 +10,6 @@ main#content {
     align-items: center;
     padding: 3rem 0 4rem 0;
     background-color: rgb(245, 255, 245);
-    min-height: 55vh;
 
     form select#studentSelector {
         width: 30rem;
@@ -32,8 +31,10 @@ main#content {
 
         tr td,
         th {
-            border: solid 1px #000000;
+            border: solid 2px #000000;
+            padding: 5px;
         }
+
 
         tr:nth-child(2n) {
             background-color: #E9E9E9;
@@ -44,13 +45,12 @@ main#content {
         }
 
         &#students {
+
+
+
             tr td {
                 width: 30rem;
-            }
 
-            a {
-                text-decoration: none;
-                color: black;
             }
         }
 
@@ -69,6 +69,9 @@ main#content {
                 background-color: #3682164f;
             }
 
+            td {
+                padding: 5px;
+            }
         }
 
         &#dailies {
@@ -111,37 +114,20 @@ main#content {
                     padding: 1px;
                     width: 20rem;
                     margin-left: 1rem;
-                    border-radius: 0.5rem;
                 }
 
                 select {
                     margin-left: 1rem;
                     width: 20.4rem;
                     height: 30px;
-                    border-radius: 0.5rem;
-                    border-color: black;
                 }
 
                 textarea {
                     width: 20rem;
                     margin-left: 1rem;
                     resize: vertical;
-                    border-radius: 0.5rem;
                 }
             }
-        }
-    }
-
-    button {
-        margin: 1rem;
-        padding: 0.5rem 1rem;
-        width: 10rem;
-        border-radius: 1rem;
-        background-color: rgb(255, 63, 63);
-
-        &:hover {
-            background-color: rgb(255, 0, 0);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
     }
 
@@ -149,13 +135,14 @@ main#content {
         margin: 1rem;
         padding: 0.5rem 1rem;
         width: 10rem;
-        border-radius: 1rem;
-        background-color: rgb(203, 255, 179);
+        background-color: vars.$color_verde_claro;
+        color: vars.$color_blanco;
+    }
 
-        &:hover {
-            background-color: rgb(101, 179, 68);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
+    input#submitAddOrModify:hover {
+        background-color: vars.$color_verde_oscuro;
+        color: vars.$color_blanco;
+        cursor: pointer;
     }
 
     form#chooseModified {
@@ -175,6 +162,7 @@ main#content {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
 
             label,
             input,
@@ -197,10 +185,34 @@ main#content {
                 margin-top: 1rem;
                 height: 3vh;
                 width: 6rem;
+                background-color: vars.$color_verde_claro;
+
+
+
             }
+
+
+            input.submit:hover {
+                color: #FFFFFF;
+                background-color: vars.$color_verde_oscuro;
+                cursor: pointer;
+            }
+
         }
 
 
+    }
+
+    #editModal { // PARA OCULTAR EL MODAL SINO DE BASE APARECE
+        display: none;
+    }
+
+
+
+    form.editActivity {  // EDITAR ESTILOS 
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 
     a:has(h2) {
@@ -212,3 +224,4 @@ main#content {
         }
     }
 }
+
