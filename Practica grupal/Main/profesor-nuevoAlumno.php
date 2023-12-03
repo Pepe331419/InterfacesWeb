@@ -41,7 +41,7 @@
             <textarea id="addObservations" cols="30" rows="10"></textarea>
         </div>
     </form>
-    <input type="submit" value="Modificar" form="addOrModify" id="submitAddOrModify">
+    <input type="submit" value="Añadir" form="addOrModify" id="submitAddOrModify">
 </main>
 
 <?php require("views/footer.php"); ?>

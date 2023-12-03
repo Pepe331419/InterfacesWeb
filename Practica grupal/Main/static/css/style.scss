@@ -8,6 +8,8 @@ main#content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 60vh;
     padding: 3rem 0 4rem 0;
     background-color: rgb(245, 255, 245);
 
@@ -46,7 +48,10 @@ main#content {
 
         &#students {
 
-
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
 
             tr td {
                 width: 30rem;
@@ -270,15 +275,28 @@ main#content {
         }
     }
 
+    button.deleteEntry {
+        background-color: #E00000;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        width: 10rem;
+        color: vars.$color_blanco;
 
-
-
-    a:has(h2) {
-        text-decoration: none;
-        color: #000000;
-
-        h2:hover {
-            color: vars.$color_verde_claro;
+        &:hover {
+            background-color: #b10000;
+            color: vars.$color_blanco;
+            cursor: pointer;
         }
+    }
+
+    
+}
+
+a:has(h2) {
+    text-decoration: none;
+    color: #000000;
+
+    h2:hover {
+        color: vars.$color_verde_claro;
     }
 }

@@ -216,6 +216,8 @@ main#content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 60vh;
   padding: 3rem 0 4rem 0;
   background-color: rgb(245, 255, 245);
 }
@@ -244,6 +246,10 @@ main#content table tr:nth-child(2n) {
 }
 main#content table tbody tr:hover {
   background-color: rgba(54, 130, 22, 0.3098039216);
+}
+main#content table#students a {
+  text-decoration: none;
+  color: #000000;
 }
 main#content table#students tr td {
   width: 30rem;
@@ -416,10 +422,23 @@ main#content form.editActivity textarea {
   border-radius: 5px;
   box-sizing: border-box;
 }
-main#content a:has(h2) {
+main#content button.deleteEntry {
+  background-color: #E00000;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  color: #FFFFFF;
+}
+main#content button.deleteEntry:hover {
+  background-color: #b10000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+a:has(h2) {
   text-decoration: none;
   color: #000000;
 }
-main#content a:has(h2) h2:hover {
+a:has(h2) h2:hover {
   color: #7ED957;
 }/*# sourceMappingURL=style.css.map */
